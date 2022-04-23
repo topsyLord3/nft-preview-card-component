@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Outfit:wght@300;400;600&family=Poppins&display=swap');
+
+:root{
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%):
+    --White -color: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan-color: hsl: hsl(178, 100%, 50);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Very-dark-blue-main-BG);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "outfit" sans-serif,
+}
+.card-container{
+    background-color: var(--Very-dark-blue-card-BG);
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px ;
+    padding-bottom: 15px;
+}
+
+.card img{
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.before{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 255, 247, 0.5);
+    border-radius: 5px;
+    width: 210px;
+    height: 210px;
+    z-index: -1;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.before img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    transform: scale(0.2, 0.2);
+}
+
+.card:hover .before{
+    z-index: 1;
+    transform: 3s ease-out;
+    
+}
+
+.text_no{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.text_no:hover{
+    color: cyan;
+    cursor: pointer;
+    transition: 3s;
+}
+.text{
+    color:  hsl(215, 51%, 70%);
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.contr{
+    margin-left: 10px;
+}
+.price_day{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    min-width: 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    border-width: 90%;
+    margin: auto;
+}
+.price{
+    display: flex;
+    align-items: center;
+    
+}
+.icon{
+    color: cyan;
+    font-size: 10px;
+    padding-left: 5px;
+}
+.icon_2{
+    color: var(--Soft-blue);
+    font-size: 10px;
+    padding-left: 5px;
+}
+.icon_3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.avt{
+    max-width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.icon_3 p{
+    color: white;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.color{
+    color: hsl(215, 51%, 70%);
+}
+.change:hover{
+    color: cyan;
+    cursor: pointer;
+    transition: 3s;
+}
